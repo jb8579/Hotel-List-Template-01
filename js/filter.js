@@ -1,3 +1,40 @@
+// SCROLL TO LIST START
+const scrollSection =
+  window.innerWidth <= 1000 && document.getElementById("scrollOnMb");
+scrollSection &&
+  scrollSection.scrollIntoView({ behavior: "smooth", block: "start" });
+// SCROLL TO LIST END
+
+// NAVBAR START
+const navBtn = document.getElementById("nav_btn");
+const navCloseBtn = document.getElementById("nav_close_btn");
+const overlay = document.getElementById("overlay");
+const navLinks = document.getElementById("nav_links");
+const nav = document.querySelector("nav");
+const main = document.querySelector("main");
+const copied = document.querySelector('.copied');
+const copyPromos = document.querySelectorAll(".copyPromo");
+
+function toggleNav(show) {
+  overlay.style.left = show ? "0" : "-100%";
+  navLinks.style.left = show ? "0" : "-100%";
+  document.body.classList.toggle("remove_scrolling", show);
+}
+
+navBtn.addEventListener("click", () => toggleNav(true));
+navCloseBtn.addEventListener("click", () => toggleNav(false));
+// NAVBAR END
+
+copyPromos?.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    let promo =item.closest('.promo').querySelector('p > span').innerHTML;
+    navigator.clipboard.writeText(promo).then(()=>{
+      copied.style.opacity = '1';
+      setTimeout(()=> copied.style.opacity = '0', 500)
+    })
+  });
+});
+
 // TOGGLE MOBILE FILTER START
 const openFilter = document.getElementById("openFilter");
 const closeFilter = document.getElementById("closeFilter");
@@ -24,7 +61,6 @@ overlay.addEventListener("click", () => toggleFilter(false));
 applyFilter.addEventListener("click", () => toggleFilter(false));
 // TOGGLE MOBILE FILTER END
 
-
 // CHECKBOX CLICKING & RESULT VALUE START
 document.querySelectorAll(".checkbox").forEach((checkbox) => {
   checkbox.addEventListener("click", (e) => {
@@ -32,8 +68,19 @@ document.querySelectorAll(".checkbox").forEach((checkbox) => {
     let input = closestParent.querySelector('input[type="checkbox"]');
     let filterName = closestParent.parentNode.getAttribute("data-filter");
     e.target.checked = true;
+    
+    // Check if 'All' is selected and reset all filters
+    if (input && input.id === "deal_all") {
+      document.querySelectorAll(".checkbox input").forEach((checkboxInput) => {
+        checkboxInput.checked = checkboxInput.id === "deal_all";
+      });
+      changeListOrder("unselected", "All", DefaultCards);
+      return; // Exit the function to prevent further filtering
+    }
+
     const isPaymentCheckboxes =
       closestParent.parentNode.getAttribute("data-filter") === "payment";
+    
     closestParent.parentNode.querySelectorAll("input").forEach((item) => {
       if (isPaymentCheckboxes) {
         e.target.checked = false;
@@ -57,6 +104,9 @@ document.querySelectorAll(".checkbox").forEach((checkbox) => {
   });
 });
 // CHECKBOX CLICKING & RESULT VALUE END
+
+
+
 
 // FILTER RANGE START
 const range = document.getElementById("range");
@@ -101,6 +151,7 @@ let scoreValue;
 let sortValue;
 let paymentValue;
 let titleValue;
+
 
 function changeListOrder(filterName, value, DefaultCards) {
   const main = document.querySelector('main');

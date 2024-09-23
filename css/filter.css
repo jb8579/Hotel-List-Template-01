@@ -1,4 +1,6 @@
-/* FILTER START */
+/* -------------------------------
+  Filter Start
+--------------------------------- */
 :root {
   --score_deg: 5deg;
   --score_base: #07cc1a;
@@ -6,6 +8,7 @@
   --score_trackball: var(--score_base);
   --score_range: 0%;
 }
+
 .filter_no_result{
   position: absolute;
   top: 32px;
@@ -18,12 +21,14 @@
   line-height: 32px;
   letter-spacing: -0.02em;
 }
+
 @media (max-width: 1000px) {
   .filter_no_result{
     width: 100%;
     left: 0;
   }
 }
+
 .filter {
   width: 232px;
   height: max-content;
@@ -36,12 +41,15 @@
   padding: 32px;
   background: #fff;
 }
+
 .mb_filter .container {
   display: none;
 }
+
 .filter input {
   cursor: pointer;
 }
+
 .filter .checkbox input {
   appearance: none;
   -webkit-appearance: none;
@@ -53,13 +61,16 @@
   border-radius: 50%;
   background: #f3f7fa;
 }
+
 .filter .checkbox input:checked {
   border-color: #07cc1a;
   background: #07cc1a;
 }
+
 .filter h3 {
   position: relative;
 }
+
 .filter h3::after {
   content: "";
   position: absolute;
@@ -70,12 +81,14 @@
   border-bottom: 1px solid #e0e0e0;
   background-color: #e0e0e0;
 }
+
 .filter .checkbox_container {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-top: 12px;
 }
+
 .checkbox_container .checkbox {
   display: flex;
   align-items: center;
@@ -86,6 +99,7 @@
   font-weight: 400;
   font-size: 15px;
 }
+
 @media (max-width: 1000px) {
   .checkbox_container .checkbox{
     height: 18px;
@@ -95,20 +109,24 @@
 .first .checkbox {
   gap: 12.2px;
 }
+
 /* Filter Score Start */
 .filter_score {
   margin-top: 12px;
   position: relative;
 }
+
 #range {
   -webkit-appearance: none;
   width: 100%;
   position: relative;
   cursor: pointer;
 }
+
 #range:focus {
   outline: none;
 }
+
 #range:before {
   position: absolute;
   content: "";
@@ -116,10 +134,12 @@
   height: 3px;
   background: #a4f3ab;
 }
+
 #range::-webkit-slider-runnable-track {
   background: #a4f3ab;
   height: 3px;
 }
+
 #range::-webkit-slider-thumb {
   width: 16px;
   height: 16px;
@@ -132,6 +152,7 @@
   position: relative;
   transition: 0.5s all ease;
 }
+
 #value {
   position: absolute;
   left: var(--score_range);
@@ -169,7 +190,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
+
   #filterOverlay,
   .filter {
     position: fixed;
@@ -181,14 +203,16 @@
     z-index: 2;
     transition: all 0.2s ease-in-out;
   }
+
   .filter {
     height: 100%;
     border-radius: 0px;
     overflow: auto;
     gap: 16px;
   }
+
   #closeFilter {
-    border: 1px solid #333;
+    border: 0px;
     background: transparent;
     border-radius: 50%;
     display: inline-flex !important;
@@ -199,10 +223,12 @@
     height: 18px;
     width: 18px;
   }
+
   #closeFilter img {
     width: 100%;
     height: 100%;
   }
+
   .apply_filter_container {
     background: #fff;
     width: 232px;
@@ -213,12 +239,13 @@
     bottom: 0;
     right: -100%;
   }
+
   #applyFilter {
     width: 100%;
     height: 40px;
     border-radius: 4px;
     border: none;
-    background: #2E90FA;
+    background: linear-gradient(150deg, rgb(172 36 36) 8%, rgb(239 5 5) 90.3%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,19 +255,23 @@
     line-height: 19px;
     letter-spacing: -0.02em;
   }
+
   .fifth {
     margin-bottom: 100px;
   }
+
   .filter_score,
   .checkbox_container {
     margin-top: 6px;
   }
 }
+
 @media (max-width: 720px) {
   .mb_filter .container {
     max-width: 470px;
   }
 }
+
 @media (max-width: 495px) {
   .mb_filter .container {
     max-width: 100%;
@@ -256,7 +287,9 @@
   line-height: 32px;
   letter-spacing: 0px;
   font-family: "Montserrat", sans-serif;
-}.checkbox span, .checkbox label {
+}
+
+.checkbox span, .checkbox label {
   color: #080808;
   font-size: 14px;
   font-weight: 400;
@@ -265,6 +298,7 @@
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
+
 @media (max-width: 1000px) {
   .filter h3 {
     font-size: 14px;
@@ -273,8 +307,6 @@
 }
 /* FONTS END */
 
-/* FILTER END */
-
 .filter .star,
 .filter .star::before {
   min-height: 15px;
@@ -282,21 +314,30 @@
   max-width: 80px;
   background-size: 16px;
 }
+
 .filter .star {
   width: 80px;
 }
+
 .filter .star[data-rating="1"]::before {
   width: 16px;
 }
+
 .filter .star[data-rating="2"]::before {
   width: 32px;
 }
+
 .filter .star[data-rating="3"]::before {
   width: 48px;
 }
+
 .filter .star[data-rating="4"]::before {
   width: 65px;
 }
+
 .filter .star[data-rating="5"]::before {
   width: 80px;
 }
+/* -------------------------------
+  Filter End
+--------------------------------- */

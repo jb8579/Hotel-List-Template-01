@@ -5,6 +5,7 @@ main .container {
   justify-content: space-between;
   gap: 68px;
 }
+
 .listing {
   display: flex;
   flex-direction: column;
@@ -12,11 +13,13 @@ main .container {
   width: 100%;
   max-width: 880px;
 }
+
 .card {
   min-width: 880px;
   box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.149);
   border-radius: 16px;
 }
+
 @media (max-width: 1200px) {
   main .container {
     gap: 20px;
@@ -25,6 +28,7 @@ main .container {
     min-width: auto;
   }
 }
+
 .rating {
   background: #0b2f72;
   height: 47px;
@@ -33,11 +37,13 @@ main .container {
   justify-content: space-between;
   padding: 0px 16px;
 }
+
 .rating_first {
   display: flex;
   align-items: center;
   gap: 8px;
 }
+
 .main {
   padding: 16px;
   display: flex;
@@ -46,6 +52,7 @@ main .container {
   border-bottom-right-radius: 16px;
   background: #fff;
 }
+
 .details {
   width: 100%;
   display: flex;
@@ -53,17 +60,20 @@ main .container {
   gap: 30px;
   justify-content: space-between;
 }
+
 .details_header, .details_header .card_texts {
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 440px;
 }
+
 .pros {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
 .pros p {
   display: flex;
   align-items: center;
@@ -71,22 +81,26 @@ main .container {
   position: relative;
   left: 16px;
 }
+
 .pros p::before {
   content: "\2713";
   position: absolute;
   left: -16px;
   color: #00df00;
 }
+
 .pros span {
   width: 8px;
   height: 8px;
   background: #1ebb55;
   border-radius: 50%;
 }
+
 .trophy > img {
   width: 86px;
   height: auto;
 }
+
 .btn {
   display: flex;
   flex-direction: column;
@@ -95,6 +109,7 @@ main .container {
   position: relative;
   margin-top: 20px;
 }
+
 .btn a:first-child {
   width: 100%;
   height: 48px;
@@ -105,12 +120,14 @@ main .container {
   background: linear-gradient(51.06deg, #FF8410 0%, #DA0036 120.22%);
   box-shadow: 2px 2px 0px 0px #F45F55;
 }
+
 .img_section {
   width: 240px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .img_first {
   width: 100%;
   height: 237px;
@@ -122,6 +139,7 @@ main .container {
   gap: 24px;
   border-radius: 8px;
 }
+
 .list_bg_img_overlay,
 .list_bg_img {
   position: absolute;
@@ -131,12 +149,15 @@ main .container {
   height: 100%;
   border-radius: 8px;
 }
+
 .list_bg_img_overlay {
   background: #000000a6;
 }
+
 .list_bg_img {
   object-fit: cover;
 }
+
 .label {
   color: #ffffff;
   font-size: 13px;
@@ -156,33 +177,34 @@ main .container {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
 }
+
 .label::before, .label::after {
   content: "";
   position: absolute;
   border-width: 9.1px;
   border-style: solid;
 }
+
 .label::before {
   right: 100%;
   border-left-color: transparent !important;
 }
+
 .label::after {
   left: 100%;
   border-right-color: transparent !important;
 }
-@media (max-width: 1000px) {
-  .label::after {
-    display: none;
-  }
-}
+
 .score {
   z-index: 1;
 }
+
 img.brand_logo {
   max-height: 150px;
   z-index: 1;
   position: relative;
 }
+
 .img_second {
   width: 100%;
   height: 60px;
@@ -190,6 +212,7 @@ img.brand_logo {
   align-items: center;
   gap: 4px;
 }
+
 .img_second img {
   width: 74px;
   height: 100%;
@@ -198,14 +221,13 @@ img.brand_logo {
 }
 
 @media (max-width: 1000px) {
-  .card {
-    height: max-content;
-  }
+
   main .container {
     justify-content: center;
     padding-top: 0px;
     padding-bottom: 40px;
   }
+
   .listing {
     width: auto;
     max-width: 100%;
@@ -213,6 +235,7 @@ img.brand_logo {
     grid-template-columns: 343px 343px;
     gap: 16px;
   }
+
   .list_bg_img_overlay {
     background: linear-gradient(
       180deg,
@@ -221,59 +244,31 @@ img.brand_logo {
       rgba(0, 0, 0, 0.9) 100%
     );
   }
-  .rating {
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    background: #8a4397;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    background: #fff;
-    padding: 0px 12px;
-    padding-top: 16px;
-    height: auto;
-  }
   .main {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     gap: 8px;
     margin-block: -1px;
   }
-  .details_header {
-    gap: 0px;
-    justify-content: space-between;
-    height: 100%;
-  }
-  .details_header .card_texts {
-    gap: 8px;
-  }
-  .img_section {
-    width: 113px;
-    flex-direction: row;
-    align-items: center;
-  }
+
   .img_first {
     width: 113px;
     height: 107px;
     gap: 1px;
   }
-  .score {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1px;
-  }
+
   .brand_logo {
     max-height: 60px;
     z-index: 1;
   }
+
   .btn {
     padding: 12px;
     padding-top: 0px;
-    background: #fff;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    background: none;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     text-align: center;
   }
 }
@@ -287,6 +282,7 @@ img.brand_logo {
   line-height: 22px;
   letter-spacing: 0px;
 }
+
 .brand_name {
   color: #fff;
   font-size: 16px;
@@ -294,6 +290,7 @@ img.brand_logo {
   line-height: 19px;
   letter-spacing: 0px;
 }
+
 .score_num {
   color: #000000;
   font-size: 43px;
@@ -302,6 +299,7 @@ img.brand_logo {
   letter-spacing: -0.02em;
   text-align: center;
 }
+
 .score_text {
   color: #1d1d1d;
   font-size: 14px;
@@ -309,6 +307,7 @@ img.brand_logo {
   line-height: 17px;
   letter-spacing: -0.02em;
 }
+
 .address {
   color: #898888;
   font-size: 12px;
@@ -317,6 +316,7 @@ img.brand_logo {
   letter-spacing: -0.02em;
   font-family: "Montserrat", sans-serif;
 }
+
 .something {
   color: #1c1c1c;
   font-size: 15px;
@@ -325,6 +325,7 @@ img.brand_logo {
   letter-spacing: -0.02em;
   font-family: "Montserrat", sans-serif;
 }
+
 .card_title {
   color: #1c1c1c;
   font-size: 24px;
@@ -333,6 +334,7 @@ img.brand_logo {
   letter-spacing: normal;
   word-break: break-word;
 }
+
 .pros p {
   color: #464646;
   font-size: 14px;
@@ -342,6 +344,7 @@ img.brand_logo {
   font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
 }
+
 .btn a:first-child {
   color: #fff;
   font-size: 16px;
@@ -351,6 +354,7 @@ img.brand_logo {
   text-align: center;
   text-decoration: none;
 }
+
 .btn a:last-child {
   color: #ffffff;
   font-size: 16px;
@@ -362,55 +366,18 @@ img.brand_logo {
   padding: 20px 24px;
   font-family: "Montserrat", sans-serif;
 }
+
 .brand_name_mb {
   display: none;
 }
+
 @media (max-width: 1000px) {
-  .rating_first span:first-child {
-    color: #000;
-    font-size: 12px;
-    font-weight: 900;
-    line-height: 11px;
-    letter-spacing: 0em;
-    font-style: normal;
-    background: #cee4fd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px 9px;
-    border-radius: 4px;
-  }
+
   .score_num {
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 42px;
+    line-height: 75px;
   }
-  .score_text {
-    font-size: 10px;
-    line-height: 11px;
-    letter-spacing: 0em;
-  }
-  .address {
-    color: #8f8f8f;
-    font-size: 9px;
-    font-weight: 400;
-    line-height: 9px;
-    letter-spacing: -0.08em;
-  }
-  .something {
-    display: none;
-    color: #4d4d4d;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: -0.02em;
-  }
-  .card_title {
-    color: #000;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-  }
+
   .btn a:first-child {
     color: #fff;
     font-weight: 500;
@@ -418,19 +385,7 @@ img.brand_logo {
     height: 46px;
     border-radius: 4px;
   }
-  .label {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0em;
-    position: relative;
-    width: max-content;
-    top: 0;
-    left: 12px;
-    right: 2px;
-    padding-right: 4px;
-    margin-right: 12px;
-  }
+
   .bestoffer {
     color: #fff;
     font-size: 18px;
@@ -439,31 +394,19 @@ img.brand_logo {
     letter-spacing: -0.02em;
   }
 }
-@media (max-width: 1000px) {
-  .address {
-    width: 190px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
+
 @media (max-width: 720px) {
   .address{
     width: 300px;
   }
 }
+
 @media (max-width: 520px) {
   .address{
     width: 225px;
   } 
 }
-@media (max-width: 450px) {
-  .address{
-    width: 190px;
-  }
-}
 /* FONTS END */
-
 
 .promo{
   max-width: 240px;
@@ -475,6 +418,7 @@ img.brand_logo {
   justify-content: space-between;
   background: #FFEFDF;
 }
+
 .promo p{
   color: #667085;
   font-size: 12px;
@@ -482,15 +426,18 @@ img.brand_logo {
   line-height: 16px;
   letter-spacing: -0.02em;
 }
+
 .promo p span{
   color: #B25700;
   font-weight: 700;
 }
+
 .copyPromo{
   width: 25px;
   height: 25px;
   cursor: pointer;
 }
+
 .copied{
   position: fixed;
   left: 50%;
@@ -513,16 +460,8 @@ img.brand_logo {
 }
 
 /* NEW MOBILE CARDS START */
-.card_mb {
-  display: none;
-}
+
 @media (max-width: 1000px) {
-  .card_desktop {
-    display: none;
-  }
-  .card_mb {
-    display: flex;
-  }
   .left {
     padding-inline: 20px;
     display: flex;
@@ -534,6 +473,7 @@ img.brand_logo {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
   }
+
   .rank_section {
     position: absolute;
     top: 0;
@@ -545,6 +485,7 @@ img.brand_logo {
     border-top-left-radius: 8px;
     background: #ffffff4d;
   }
+
   .rank_section .rank_num {
     height: 24px;
     width: 19px;
@@ -559,6 +500,7 @@ img.brand_logo {
     line-height: 11px;
     background: #ffffff4d;
   }
+
   .brand_name_mb {
     width: 100%;
     height: 24px;
@@ -571,23 +513,27 @@ img.brand_logo {
     justify-content: center;
     padding-left: 2px;
   }
+
   .brand_img img {
     width: 80px;
     height: 64px;
     object-fit: contain;
   }
+
   .exp {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 4px;
   }
+
   .exptext {
     color: #fff;
     font-size: 10px;
     font-weight: 300;
     line-height: 10px;
   }
+
   .right {
     width: 100%;
     background: #fff;
@@ -599,6 +545,7 @@ img.brand_logo {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
   }
+
   .roffer {
     color: #000;
     font-size: 14px;
@@ -608,15 +555,7 @@ img.brand_logo {
     text-align: center;
     margin-bottom: 8px;
   }
-  .card_title {
-    color: #000;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    margin-bottom: 12px;
-  }
+
   .mb_our_score {
     display: flex;
     flex-direction: column-reverse;
@@ -624,34 +563,41 @@ img.brand_logo {
     justify-content: center;
     gap: 8px;
   }
+
   .mb_our_score p {
     color: #000;
     font-size: 12px;
     font-weight: 300;
     line-height: 12px;
   }
+
   .mb_our_score .score_num{
     border-radius: 6px;
     padding: 3px 6px;
   }
+
   .card_mb .promo{
     max-width: 92%;
     margin: 0 auto;
     margin-top: 10px;
   }
+
   .rbottom{
     width: 100%;
   }
+
   .card_mb .btn {
     padding: 0px;
     gap: 10px;
   }
+
   .card_mb .address{
     font-size: 10px;
     font-weight: 400;
     line-height: 10px;
     letter-spacing: -0.08em;
   }
+
   .labelmb {
     margin-top: -8px;
     margin-right: -20px;
@@ -662,6 +608,7 @@ img.brand_logo {
     display: flex;
     justify-content: flex-end;
   }
+
   .labelmb_inner {
     width: max-content;
     padding-inline: 25px;
@@ -675,6 +622,7 @@ img.brand_logo {
     justify-content: center;
     position: relative;
   }
+
   .labelmb_inner::before{
     position: absolute;
     content: '';
@@ -684,25 +632,29 @@ img.brand_logo {
     border-left-color: transparent !important;
   }
 }
-/* NEW MOBILE CARDS END */
 
+/* NEW MOBILE CARDS END */
 @media (max-width: 720px) {
   main .container {
     max-width: 500px;
   }
+
   .listing {
     grid-template-columns: 100%;
   }
+
   .brand_img img {
     width: 120px;
     height: 80px;
   }
 }
+
 @media (max-width: 450px) {
   .left{
     padding-inline: 10px;
   }
 }
+
 @media (max-width: 370px) {
   .brand_img img{
     width: 90px;

@@ -1,17 +1,22 @@
-/* NAVBAR START */
+/* --------------------------------
+  Navbar Start
+---------------------------------- */
 nav{
   background: transparent;
 }
+
 nav .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-block: 15px;
 }
+
 .logo {
   width: 250px;
   height: auto;
 }
+
 .nav_link {
   color: #fff;
   font-size: 15px;
@@ -23,15 +28,18 @@ nav .container {
   text-decoration: underline;
   font-family: "Montserrat", sans-serif;
 }
+
 #nav_btn,
 #nav_close_btn {
   display: none;
 }
+
 #nav_links {
   display: flex;
   align-items: center;
   gap: 6px;
 }
+
 #overlay {
   position: fixed;
   top: 0;
@@ -42,18 +50,23 @@ nav .container {
   transition: all 0.2s ease-in-out;
   z-index: 2;
 }
+
 @media (max-width: 500px) {
-  #nav_btn,
-  #nav_close_btn {
+  #nav_btn, #nav_close_btn {
     display: block;
     background: transparent;
     border: none;
     color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 8px;
   }
+
   #nav_close_btn img {
     width: 20px;
     height: 20px;
   }
+
   #nav_links {
     position: fixed;
     top: 0;
@@ -67,8 +80,9 @@ nav .container {
     z-index: 2;
   }
 }
-
-/* NAVBAR END */
+/* --------------------------------
+  Navbar End
+---------------------------------- */
 
 
 
@@ -113,7 +127,9 @@ header .container {
 
 
 
-
+/* ---------------------------------
+  Body Start
+------------------------------------- */
 body {
   background-image: url('../images/pngtree-classy-luxury-casino-game-background-image_774371.jpg');
   background-attachment: fixed;
@@ -134,254 +150,9 @@ body::before {
   right: 0;
   z-index: -1;
 }
-
-/* FONTS END */
-
-@media (max-width: 1000px) {
-  header .container {
-    min-height: auto;
-    padding-top: 130px;
-    padding-bottom: 30px;
-  }
-  .title{
-    font-size: 20px;
-    line-height: 28px;
-  }
-}
-
-/* PAGES START */
-.pages {
-  padding: 32px 5px;
-}
-.pages .container {
-  box-shadow: 0px 2px 7px 0px #00000017;
-  background: #fff;
-  border-radius: 8px;
-  padding-block: 16px;
-}
-.pages h2 {
-  color: #1c1c1c;
-  font-size: 19px;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: -0.02em;
-}
-.pages p,
-.pages a,
-.pages li {
-  color: #1c1c1c;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  margin: 0px;
-  padding-block: 5px;
-}
-.pages a {
-  text-decoration: underline;
-}
-.pages ol,
-.pages ul {
-  margin-left: 15px;
-  padding: 0px;
-}
-@media (max-width: 520px) {
-  .pages p,
-  .pages a,
-  .pages li {
-    font-size: 14px;
-  }
-}
-/* PAGES END */
-
-/* FOOTER START */
-.footer_images .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  max-width: 50%;
-  margin: 0 auto;
-  margin-bottom: 72px;
-  margin-top: 120px;
-}
-.footer_images .container img {
-  width: auto;
-  height: 50px;
-}
-@media (max-width: 1200px) {
-  .footer_images .container {
-    max-width: 60%;
-  }
-}
-@media (max-width: 1000px) {
-  .footer_images .container {
-    max-width: 100%;
-    margin-bottom: 32px;
-  }
-}
-@media (max-width: 400px) {
-  .footer_images .container img {
-    height: 35px;
-  }
-}
-footer {
-  background: #000000db;
-}
-.footer_rule {
-  width: 75%;
-}
-.footer_nav,
-.footer_nav div {
-  display: flex;
-  flex-direction: column;
-}
-.footer_nav {
-  width: 20%;
-  align-items: flex-end;
-  justify-content: space-between;
-  border-left: 1px solid #4f4f4f;
-}
-
-.footer_nav div {
-  gap: 24px;
-}
-@media (max-width: 1000px) {
-  footer .container {
-    flex-direction: column;
-    padding: 32px 16px 40px 16px;
-  }
-  .footer_rule,
-  .footer_nav {
-    width: 100%;
-  }
-  .footer_nav {
-    margin-top: 24px;
-    padding-top: 24px;
-    align-items: center;
-    border-left: none;
-    border-top: 1px solid #4f4f4f;
-  }
-  .footer_nav div{
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 380px) {
-  .footer_nav div{
-    gap: 20px;
-  }
-}
-.footer_rule {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: flex-start;
-}
-.footer_rule p, footer a {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: -0.02em;
-}
-footer a {
-  color: #2e90fa;
-  text-decoration: underline;
-}
-.footer_rule span {
-  font-weight: bold;
-  font-size: 16px;
-  color: #fff;
-}
-.copyright {
-  color: #b7b7b7;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  text-align: center;
-}
-/* FOOTER END */
-
-.scontainer {
-  width: 100%;
-  max-width: 545px;
-  margin: 0 auto;
-}
-.get_in_touch .desctiption {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.14px;
-}
-.get_in_touch input {
-  margin-top: 20px;
-  padding: 12px 20px;
-  width: 80.1%;
-  border: 1px solid #E0E0E0;
-}
-.get_in_touch button {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  width: 88.5%;
-  margin-top: 20px;
-  background: #2E90FA;
-  padding: 12px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-.get_in_touch .icons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-.get_in_touch .align-email{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-@media (max-width: 500px) {
-  .get_in_touch .icons {
-    flex-wrap: wrap;
-    row-gap: 12px;
-  }
-}
-.get_in_touch .icons .icon {
-  display: flex;
-  column-gap: 16px;
-}
-@media (max-width: 500px) {
-  .get_in_touch .icons .icon {
-    width: 100%;
-  }
-}
-.get_in_touch .icons .icon .text {
-  font-size: 13px;
-  font-weight: 400;
-}
-.get_in_touch .icons .icon .text .bold {
-  font-size: 13px;
-  font-weight: 600;
-}
-header a{
-  color: #fff;
-  text-decoration: underline;
-}
-
-.note {
-  background: #a12503;
-  color: white;
-  padding: 15px 5px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 18px;
-}
+/* ---------------------------------
+  Body Start
+------------------------------------- */
 
 
 
@@ -395,8 +166,6 @@ header a{
   bottom: -5px;
   padding: 60px 0px 0px 0px;
 }
-  
-
   
 .footer-license-images {
   display: flex;
