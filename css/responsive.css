@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) {
+    span.brand_name {
+        display: none;
+    }
 
     p.subtitle.d-m-mone{
         display: none;
@@ -400,7 +403,11 @@
 
 }
 
-
+@media only screen and (max-width: 360px) and (min-width: 351px){
+    .score {
+        transform: translate(-89px, 160px) !important;
+    }
+}
 
 @media only screen and (max-width: 375px) and (min-width: 350px){
     .score {
