@@ -3,6 +3,10 @@
         display: none;
     }
 
+    .footer-cp-bg.pb-3 {
+        overflow-x: hidden;
+    }
+
     p.subtitle.d-m-mone{
         display: none;
     }
@@ -210,6 +214,19 @@
     .footer-license-images {
         text-align: center;
     }
+    .footer-license-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .page-content > p {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 18px;
+        padding-top: 15px;
+    }
 
     .copyright-display {
         display: flex;
@@ -221,40 +238,6 @@
         font-size: 13px;
         line-height: 28px;
         margin: 00px 2px;
-    }
-
-    .footer-cp-bg {
-        padding: 0px 0px;
-    }
-
-    .footer-txt {
-        overflow-x: hidden;
-        padding: 0px;
-    }
-
-    .footer-license-images {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: -20px !important;
-    }
-
-    .page-content > h5 {
-        font-size: 20px;
-        line-height: 28px;
-        padding-bottom: 8px;
-    }
-
-    .footer-txt > h2 {
-        font-size: 30px;
-        margin-top: 30px;
-        margin-bottom: -5px;
-    }
-
-    p.footer-p-a {
-        font-size: 11px;
-        font-weight: 400;
-        color: #dddcdc;
-        line-height: 21px;
     }
 
     .copyright-context > p {
