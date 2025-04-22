@@ -818,6 +818,13 @@
     <script src="js/filter.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <script>
+      function forceReload() {
+        const currentPath = window.location.pathname;
+        const timestamp = new Date().getTime();
+        window.location.href = `${currentPath}?nocache=${timestamp}`;
+      }
+    </script>
   </body>
 
 </html>
