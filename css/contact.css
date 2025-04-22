@@ -139,17 +139,17 @@ section::before{
 .container .contactForm .formBox .inputBox.w100{
 	width: 100%;
 }
-.container .contactForm .formBox .inputBox input,
-.container .contactForm .formBox .inputBox textarea{
-	width: 100%;
-	resize: none;
-	padding: 5px 0;
-	font-size: 14px;
-	font-weight: 300;
-	color: #333;
-	border: none;
-	outline: none;
-	border-bottom: 1px solid #777;
+.container .contactForm .formBox .inputBox input, .container .contactForm .formBox .inputBox textarea {
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+    margin-bottom: 15px;
 }
 
 .container .contactForm .formBox .inputBox textarea{
@@ -171,13 +171,14 @@ section::before{
 .container .formBox .inputBox input:focus ~ span,
 .container .formBox .inputBox input:valid ~ span,
 .container .formBox .inputBox textarea:focus ~ span,
-.container .formBox .inputBox textarea:focus ~ span{
-	transform: translateY(-20px);
+.container .formBox .inputBox textarea:valid ~ span{
+	transform: translateY(-25px);
 	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 1px;
 	color: #062eaf;
 	font-weight: 500;
+	margin-bottom: 8px;
 }
 
 .container .contactForm .formBox .inputBox input[type="submit"]{
