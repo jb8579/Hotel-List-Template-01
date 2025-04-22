@@ -187,10 +187,10 @@ function changeListOrder(filterName, value, DefaultCards) {
 
   const titleKeywords = {
     "All": "All",
-    "150%": "150%",
-    "200%": "200%",
-    "250%": "250%",
-    "350%": "350%",
+    "10%": "10%",
+    "15%": "15%",
+    "20%": "20%",
+    "25%": "25%",
   };
 
   const paymentKeyword = paymentKeywords[paymentValue];

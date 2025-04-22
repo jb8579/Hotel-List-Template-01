@@ -284,9 +284,9 @@ p.footer-p-a > a:hover {
   font-family: "Montserrat", sans-serif;
 }
 
-.page-content > p{    
-  color: rgba(88, 88, 88, 0.6);
-  font-size: 15px;
+.page-content > p {
+  color: rgb(12 12 12);
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 26px;
